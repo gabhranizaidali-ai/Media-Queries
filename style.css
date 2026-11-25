@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+/* Latest syntax */
+
+@media (width<=400px) {
+  body {
+    background-color: rgb(151, 80, 14);
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .box {
+    border: 2px solid black;
+    background-color: rgb(141, 83, 83);
+  }
+}
+
+/* orientation */
+
+@media (orientation: landscape) {
+  body {
+    background-color: rgb(254, 24, 139);
+  }
+  .container {
+    display: flex;
+  }
+  .box {
+    background-color: rgb(141, 83, 83);
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: rgb(216, 145, 145);
+  }
+}
